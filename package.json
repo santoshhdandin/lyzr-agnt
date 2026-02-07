@@ -1,5 +1,5 @@
 {
-  "name": "railway-test",
+  "name": "lyzr-backend",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,8 @@
     "node": ">=18"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.6.9"
   }
 }
