@@ -1,18 +1,13 @@
 const express = require("express");
-require("dotenv").config();
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Backend is alive");
+  res.send("OK");
 });
 
-app.post("/chat", express.json(), async (req, res) => {
-  res.json({ reply: "Test OK" });
-});
-
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("Server running on", PORT);
+  console.log("Listening on", PORT);
 });
